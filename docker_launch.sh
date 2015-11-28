@@ -10,7 +10,7 @@ SALT="TODO better salt"
 # Set the password for the project as a hash of the salt and the project
 PASSWORD=`echo $PROJECT $SALT| md5sum | cut -f1 -d" "`
 
-docker run  -d -P -p 80 \
+docker run  -it -P -p 80 \
   --rm=false \
   --name $PROJECT \
   --link some-mysql:mysql \
