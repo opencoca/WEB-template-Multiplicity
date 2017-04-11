@@ -1,0 +1,18 @@
+# Display list of screen panes on bottom of screen
+caption always "%= %-w%L>%{= BW}%n*%t%{-}%52<%+w %L="
+shelltitle "$ |bash"
+# change terminal title depending on screen pane title
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+defhstatus "screen ^E (^Et) | $USER@^EH"
+hardstatus off
+
+# don't display the copyright page
+startup_message off
+
+# increase scrollback buffer size
+defscrollback 10000
+
+# create windows
+screen -t "OpenCo Template Server" ./docker_hard_restart.sh
+screen -t "docker ps" ./.docker_ps.sh
+screen -t coding vim .
