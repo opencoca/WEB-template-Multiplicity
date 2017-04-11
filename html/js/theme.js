@@ -11,7 +11,7 @@
         // ----------------------------------------------------------------------------------------------------------------------->
         $('#loader').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
-        $('body').delay(350).css({ 'overflow': 'visible' });
+        $('body').delay(350).css({ 'overflow-y': 'scroll' });
 
 
     })
@@ -22,8 +22,8 @@
     // ---------------------------------------------------------------------------------------------------------------------------->
 
     $(document).ready(function () {
+        $(".dropdown-toggle").dropdown();
         openSite();
-
     });
 
     function openSite() {
@@ -32,12 +32,12 @@
         scroll();
         winResize();
         pushmenu();
-        pluginElement();
         sliderHero();
         sliderAll();
         containerGridMasonry();
         scrollCallbackEle();
         shortcodeElements();
+        pluginElement();
 
     };
 
@@ -147,7 +147,7 @@ function fullScreenSlider() {
     if ($('.fullscreen-carousel').length > 0) {
 
         $('.fullscreen-carousel').flexslider({
-            animation: "slide",
+            animation: "fade",
             //  startAt: 0,
             animationSpeed: 700,
             animationLoop: true,
