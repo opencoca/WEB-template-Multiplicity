@@ -13,8 +13,7 @@ PASSWORD=`echo $PROJECT $SALT| md5sum | cut -f1 -d" "`
 docker run  -it -P -p 80 \
   --rm=false \
   --name $PROJECT \
-  --link some-mysql:mysql \
-  -e VIRTUAL_HOST=$PROJECT,www.$PROJECT,$PROJECT.localhost,$PROJECT.openco.ca \
+  -e VIRTUAL_HOST=$PROJECT.openco.ca \
   -e COMMAND1="$COMMAND1" \
   -e COMMAND2="$COMMAND2" \
   -v $PROJECTPATH/html/:/usr/share/nginx/html:ro \
