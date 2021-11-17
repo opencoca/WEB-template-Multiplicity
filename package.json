@@ -12,7 +12,7 @@
   },
   "config": {
     "srcDir": "src/",
-    "distDir": "dist/"
+    "distDir": "html/"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
