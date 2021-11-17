@@ -492,6 +492,7 @@ button.ui-button::-moz-focus-inner {
 	white-space: nowrap;
 	width: 90%;
 	overflow: hidden;
+	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 }
 .ui-dialog .ui-dialog-titlebar-close {
@@ -651,6 +652,7 @@ button.ui-button::-moz-focus-inner {
 	display: block;
 	line-height: 1.4;
 	overflow: hidden;
+	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
@@ -681,6 +683,7 @@ button.ui-button::-moz-focus-inner {
 /* support: IE8 - See #6727 */
 .ui-slider.ui-state-disabled .ui-slider-handle,
 .ui-slider.ui-state-disabled .ui-slider-range {
+	-webkit-filter: inherit;
 	filter: inherit;
 }
 
@@ -1241,10 +1244,6 @@ jui .ui-widget-shadow {
 	margin: -5px 0 0 -5px;
 	padding: 5px;
 	background: #000000 url("images/ui-bg_flat_10_000000_40x100.png") 50% 50% repeat-x;
-	opacity: .2;
-	filter: Alpha(Opacity=20); /* support: IE8 */
-	border-radius: 5px;
-}
 	opacity: .2;
 	filter: Alpha(Opacity=20); /* support: IE8 */
 	border-radius: 5px;
