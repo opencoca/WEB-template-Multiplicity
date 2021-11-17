@@ -243,3 +243,19 @@
 .YTPOverlay.raster-dot.retina{
   background: url("../images/raster_dot@2x.png");
 }
+OVERLAY*/
+.YTPOverlay.raster{
+  background: url("../images/raster.png");
+}
+
+.YTPOverlay.raster.retina{
+  background: url("../images/raster@2x.png");
+}
+
+.YTPOverlay.raster-dot{
+  background: url("../images/raster_dot.png");
+}
+
+.YTPOverlay.raster-dot.retina{
+  background: url("../images/raster_dot@2x.png");
+}

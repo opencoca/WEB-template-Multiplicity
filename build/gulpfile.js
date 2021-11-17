@@ -37,6 +37,20 @@ function clean(done) {
   return done();
 }
 
+async function includeHTML(){
+  return gulp.src([
+    '*.html',
+    '!header.html', // ignore
+    '!footer.html' // ignore
+    ])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest(paths.scripts.dest));
+}
+
+
 /*
  * Copy src files to the dist dir for processing. The tasks will cleanup unneeded files.
  */
@@ -67,7 +81,12 @@ module.exports = {
     }
 
     browserSync.init({
-      server: config.distDir
+      server: {
+        "baseDir" : config.distDir,
+        "serveStaticOptions": {
+          "extensions": ['html']
+        }
+      }
     });
 
     watch([config.srcDir + '**/*.*'], series(build, refresh));

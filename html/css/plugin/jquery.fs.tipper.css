@@ -104,3 +104,16 @@
   border-right: 5px solid transparent;
   border-bottom: 5px solid #323232;
 }
+: 5px solid #323232;
+}
+.tipper.bottom .tipper-content {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+.tipper.bottom .tipper-caret {
+  top: -5px;
+  left: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #323232;
+}

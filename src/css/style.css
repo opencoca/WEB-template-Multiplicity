@@ -1189,7 +1189,7 @@ form label.error {
 
 
 /*-------------------------------------------------------------------------------------------*/
-/* HEADER         ||---------------------------- */
+/* HEADER                                                     ||---------------------------- */
 /*-------------------------------------------------------------------------------------------*/
 
 /* Header Style */
@@ -3187,13 +3187,8 @@ header.sticky .navigation a.current-ele {
 
 .item-container {
     transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
     width: 100%;
     transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    -moz-transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    -webkit-transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
-    -o-transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 
 .item-mask {
@@ -3201,9 +3196,6 @@ header.sticky .navigation a.current-ele {
     height: 100%;
     position: absolute;
     transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
     width: 100%;
     top: 0;
     left: 0;
@@ -3235,9 +3227,6 @@ header.sticky .navigation a.current-ele {
     padding-right: 30px;
     text-align: left;
     transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
     opacity: 0;
 }
 
@@ -3277,9 +3266,6 @@ ul.project-detail-block,
 .item-nav .item-all-view h5,
 .item-nav .item-all-view h6 {
     transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
 }
 
 .item-nav .item-all-view h5:hover,
@@ -3296,9 +3282,6 @@ ul.project-detail-block,
     height: 51px;
     line-height: 51px;
     transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
 }
 
 .item-nav .item-prev .prev-btn,
@@ -3311,7 +3294,6 @@ ul.project-detail-block,
 .item-nav .item-prev:hover .prev-btn,
 .item-nav .item-next:hover .next-btn {
     background: #f7f7f7;
-    /*color: #fff;*/
 }
 
 .item-nav .item-prev {
@@ -3333,9 +3315,6 @@ ul.project-detail-block,
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
     width: 150px;
 }
 
@@ -3381,7 +3360,7 @@ ul.project-detail-block,
 }
 
 /* ----------------------------------------------------------------------*/
-/* Blog   --------------------------------------------------------- */
+/* Blog        --------------------------------------------------------- */
 /* ----------------------------------------------------------------------*/
 /*.blog-post {
     position: relative;
@@ -3596,7 +3575,7 @@ ul.project-detail-block,
 }
 
 /* ----------------------------------------------------------------------*/
-/* Shop   --------------------------------------------------------- */
+/* Shop        --------------------------------------------------------- */
 /* ----------------------------------------------------------------------*/
 .shop-item {
     position: relative;
@@ -4098,10 +4077,6 @@ ul.project-detail-block,
     margin: -3px 0 0 -3px;
     background: #fff;
     border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -webkit-animation: ani-mouse 2.5s linear infinite;
-    -moz-animation: ani-mouse 2.5s linear infinite;
     animation: ani-mouse 2.5s linear infinite;
 }
 

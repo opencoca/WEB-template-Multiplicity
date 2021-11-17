@@ -92,4 +92,23 @@
 .push-body,
 .cbp-spmenu-push {
     transition: all 0.3s ease 0s;
+}0s;
+}
+
+.push-body-toleft {
+    /*left: -270px;*/
+
+}
+
+.push-body-totop {
+    top: 64px;
+
+
+}
+
+.push-body,
+.cbp-spmenu-push {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
