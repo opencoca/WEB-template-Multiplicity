@@ -1324,7 +1324,7 @@ form label.error {
     position: relative;
     display: block;
     width: 132px;
-    margin-top: 34px;
+    margin-top: 1rem;
 }
 
 .header.sticky .logo a {
@@ -2221,8 +2221,8 @@ header.sticky .navigation a.current-ele {
 .side-menu input[type="password"]:focus,
 .side-menu textarea:focus,
 .side-menu select:focus {
-    /*border-color: #e6ae49;
-            color: #fff;*/
+    /*border-color: #e6ae49; */
+            color: #fff;
 }
 
 .side-menu .sign-in {

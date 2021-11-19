@@ -9,7 +9,7 @@
       }, options);
 
       return this.each(function() {
-          cssmenu.prepend('<div id="menu-button"><a class="mobile-menu-icon bar-icon"><i class="fa fa-bars"></i></a></div>');
+        //  cssmenu.prepend('<div id="menu-button"><a class="mobile-menu-icon bar-icon"><i class="fa fa-bars"></i></a></div>');
         $(this).find("#menu-button").on('click', function(){
           $(this).toggleClass('menu-opened');
           var mainmenu = $(this).next('ul');
@@ -65,10 +65,10 @@
 (function($){
 $(document).ready(function(){
 
-  $(".navigation").menumaker({
-    title: "Menu",
-    format: "multitoggle"
-  });
+  //$(".navigation").menumaker({
+  //  title: "Menu",
+  //  format: "multitoggle"
+  //});
 
 });
 })(jQuery);
