@@ -1,3 +1,14 @@
+/*
+header .container{
+    &::before {
+        backdrop-filter: blur(5px);
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}*/
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,13 +26,10 @@
   text-transform: uppercase;
 }
 .navigation ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: none;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
 }
 .navigation ul li {
   padding: calc(1/2 * 1.618033rem) calc(1/3 * 1.618033rem);
@@ -34,16 +42,13 @@
   display: -ms-flexbox;
   display: flex;
   opacity: 1;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
   height: auto;
   overflow: visible;
 }
 .navigation ul li ul {
   height: 0;
   overflow: hidden;
-  min-width: 10rem;
+  width: 10rem;
   position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -51,22 +56,32 @@
   flex-direction: column;
   margin-left: calc(-1/3 * 1.618033rem);
   opacity: 0;
-  background: rgba(128, 128, 128, 0.5);
 }
-.navigation ul li ul li.menu-item-has-children > a:after,
+.navigation ul li ul::after {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 .navigation ul li ul li.nav-has-sub > a:after {
   float: right;
   content: " ►";
 }
-.navigation ul li ul li ul {
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+.navigation ul li ul li.nav-has-sub:hover > ul {
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+}
+.navigation ul li ul li.nav-has-sub ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 0;
   opacity: 0;
   margin-top: calc(-1.444 * 1.618033rem);
-  margin-left: calc(100% - calc(1/3 * 1.618033rem));
-  width: 100%;
+  margin-left: calc(10rem - calc(1/3 * 1.618033rem));
 }
