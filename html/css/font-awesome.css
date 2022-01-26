@@ -135,6 +135,7 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
+  -webkit-filter: none;
   filter: none;
 }
 .fa-stack {
@@ -1668,8 +1669,5 @@
   content: "\f20b";
 }
 .fa-meanpath:before {
-  content: "\f20c";
-}
-{
   content: "\f20c";
 }

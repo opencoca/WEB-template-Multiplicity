@@ -631,6 +631,10 @@ select {
     font-size: 12px;
 }
 
+section{
+    margin-bottom: -1px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -732,10 +736,6 @@ form label.error {
 }
 
 /* Spacer Style   ||-----------*/
-
-.container-fluid {
-    margin-bottom: -1px;
-}
 
 .spacer-15 {
     width: 100%;
@@ -2222,7 +2222,7 @@ header.sticky .navigation a.current-ele {
 .side-menu textarea:focus,
 .side-menu select:focus {
     /*border-color: #e6ae49; */
-    color: #fff;
+            color: #fff;
 }
 
 .side-menu .sign-in {
