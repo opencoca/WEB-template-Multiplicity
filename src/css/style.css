@@ -631,6 +631,10 @@ select {
     font-size: 12px;
 }
 
+section{
+    margin-bottom: -1px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
