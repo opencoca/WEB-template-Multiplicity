@@ -41,19 +41,12 @@
 
 .mb_YTPlayer{
   display:block;
-  -webkit-transform:translateZ(0);
   transform:translateZ(0);
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-perspective: 1000;
   perspective: 1000;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform:translate3d(0,0,0);
   transform:translate3d(0,0,0);
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -83,7 +76,6 @@
   left:0;
   overflow: hidden;
   border-radius: 4px;
-  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.7);
   box-shadow: 0 0 5px rgba(0,0,0,.7);
   background: rgba(0,0,0,.5);
 }
@@ -92,8 +84,9 @@
   border: none!important;
   margin:0!important;
   padding:0!important;
+  -moz-transform: none!important;
   -webkit-transform: none!important;
-  -ms-transform: none!important;
+  -o-transform: none!important;
   transform: none!important;
 }
 
@@ -135,6 +128,7 @@
 }
 
 .mb_YTPBar .buttonBar{
+  -moz-transition: all 1s;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
@@ -145,6 +139,7 @@
   left:0;
   padding: 5px;
   width:100%;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
@@ -222,7 +217,6 @@
   background:#fff;
   bottom:0;
   left:0;
-  -webkit-box-shadow: rgba(82, 82, 82, 0.47) 1px 1px 3px;
   box-shadow: rgba(82, 82, 82, 0.47) 1px 1px 3px;
 }
 
@@ -230,11 +224,26 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: "flat";
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 /*RASTER OVERLAY*/
+.YTPOverlay.raster{
+  background: url("../images/raster.png");
+}
+
+.YTPOverlay.raster.retina{
+  background: url("../images/raster@2x.png");
+}
+
+.YTPOverlay.raster-dot{
+  background: url("../images/raster_dot.png");
+}
+
+.YTPOverlay.raster-dot.retina{
+  background: url("../images/raster_dot@2x.png");
+}
+OVERLAY*/
 .YTPOverlay.raster{
   background: url("../images/raster.png");
 }
